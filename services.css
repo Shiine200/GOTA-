@@ -1,0 +1,119 @@
+*{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'poppins';
+} 
+
+ .container{
+
+    max-height:100vh ;
+    width: 1110px;
+    margin-inline: auto;
+   
+  
+  
+} 
+
+ .service-wrapper{
+    padding: 10px 14px;
+} 
+
+
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px;
+    
+}
+
+h1{
+    color: #fff;
+    font-size: 3rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: transparent;
+    letter-spacing: 4px;
+    background-color: rgb(4, 52, 83);
+    background: linear-gradient(8deg, rgb(8,52,1)0%, rgba(0,230,173,1) 41%, rgba(41,17,45,1)100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+h1:after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    height: 8px;
+    width: 80%;
+    border-radius: 8%;
+    background-color: rgba(255, 255, 255,0.05);
+}
+
+h1 span{
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #72e2ae;
+    animation: anim 5s linear infinite;
+}
+
+@keyframes anim{
+    95%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        left: 90%;
+    }
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card{
+    height: 330px;
+    width: 370px;
+    background-color: #818ca8;
+    padding: 3% 8%;
+    border: 0.2px solid rgba(112,226,174,0.2);
+    border-radius: 20px;
+    transition: 7s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 2rem;
+
+}
+
+.card i {
+    color: rgb(0, 0, 0);
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 4.5rem;
+}
+
+.card h2{
+  font-size: 1.6rem;
+  color: rgb(63, 46, 46);
+}
+
+.card p{
+    font-size: 1.2rem;
+    text-align: justify;
+    color: rgb(64, 59, 59);
+}
+
+.cards :hover{
+    background-color: transparent;
+    transform: translateY(-8px);
+}
